@@ -2,6 +2,7 @@ window.addEventListener('load', addCases);
 
 function addCases(){
     let casesDiv = document.getElementsByClassName('all-hits-container')[0];
+    let limitedCasesDiv = document.getElementsByClassName('limited-container')[0];
     let gitHubImgElement = document.getElementById('github-img');
 
     let arrOfElements = ['Rocket Raccoon - 39.38% | 60.62',
@@ -70,6 +71,16 @@ function addCases(){
     'USP-S - 17.65% | 82.35',
     'New Knives - 13.24% | 86.76',
     'Knives - 10.94% | 89.06'];
+    let arrOfLimitedElements = ['Office - 38.98% | 61.02',
+    'Angel - 37.94% | 62.06',
+    'Concept - 36.46% | 63.54',
+    'Cyber - 36.34% | 63.66',
+    'Gravity - 35.38% | 64.62',
+    'Rider - 34.88% | 65.12',
+    'Museo - 34.72% | 65.28',
+    'Stream - 30.98% | 69.02',
+    'Hot - 30.90% | 69.10',
+    '10% Knife - 10.00% | 90.00'];
     
     for (const item of arrOfElements) {
         let insideDivCase = document.createElement('div');
@@ -80,6 +91,14 @@ function addCases(){
         casesDiv.appendChild(insideDivCase);
     }
 
+    for (const item of arrOfLimitedElements) {
+        let insideDivCase = document.createElement('div');
+        insideDivCase.setAttribute("class", 'hits-info');
+        let h2Inner = document.createElement('h2');
+        h2Inner.textContent = item;
+        insideDivCase.appendChild(h2Inner);
+        limitedCasesDiv.appendChild(insideDivCase);
+    }
 
     gitHubImgElement.addEventListener('click', function () {
         window.location.href = "https://github.com/PetarWho";

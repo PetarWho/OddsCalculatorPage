@@ -45,11 +45,19 @@ body {
 
 #info-text{
     padding-top: 5vh;
-    padding-bottom: 10vh;
     color:#29d392;
 }
 
-#all-hits {
+#wrapper {
+    justify-content: center;
+    margin: 3.7rem 0 0;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#all-hits,
+#limited-hits {
     display: inline;
     /*max-width: 22%;*/
     flex-basis: 10%;
@@ -105,16 +113,25 @@ body {
     color: #1A2250;
 }
 
-.hits-info>.save-btn,
-.hits-info>.like-btn,
-.hits-info>.delete-btn {
-    width: 115px;
-    display: inline;
-    padding-top: 4px;
-    padding-bottom: 25px;
-    margin-top: 7px;
-    margin-left: 5px;
-    height: 20px;
+.limited-container {
+    width: 410px;
+    min-height: 400px;
+    height: auto;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    place-items: center;
+    line-height: 1.5;
+    box-shadow: 0 20px 25px rgba(88, 69, 105, 0.712);
+    background-color: #FFD07E;
+}
+
+.limited-container>h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(40, 39, 44);
+    font-size: 30px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1600px) {
