@@ -1,13 +1,23 @@
+#github-img {
+    padding-bottom: 3vh;
+    width:5vh;
+    height: 8vh;
+  }
+  #github-img:hover{
+    transition: 0.3s;
+    height: 10vh;
+    width: 7vh;
+  }
+
 body {
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
     font-size: 1.5rem;
     background: linear-gradient(-45deg, #363636, #61643f);
-    background-size: 400% 400%;
+    background-size: 10000% 10000%;
     animation: gradient 10s ease infinite;
     height: 100vh;
   }
@@ -30,6 +40,7 @@ body {
 }   
 
 #info-text{
+    padding-top: 5vh;
     padding-bottom: 10vh;
     color:#29d392;
 }
@@ -39,6 +50,7 @@ body {
     /*max-width: 22%;*/
     flex-basis: 10%;
     margin-left: 1em;
+    padding-bottom: 10vh;
 }
 .all-hits-container {
     width: 410px;
