@@ -9,6 +9,10 @@
     width: 7vh;
   }
 
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+
 body {
     font-family: "Poppins", sans-serif;
     display: flex;
