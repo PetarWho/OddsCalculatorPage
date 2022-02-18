@@ -72,15 +72,21 @@ function addCases(){
     'New Knives - 13.24% | 86.76%',
     'Knives - 10.94% | 89.06%']
     let arrOfLimitedElements = ['Office - 38.98% | 61.02%',
+    'Romantic - 38.65% | 61.35%',
+    'Rose - 38.65% | 61.35%',
     'Angel - 37.94% | 62.06%',
     'Concept - 36.46% | 63.54%',
     'Cyber - 36.34% | 63.66%',
+    'Kiss - 35.64% | 64.36%',
     'Gravity - 35.38% | 64.62%',
     'Rider - 34.88% | 65.12%',
+    'Date - 34.87% | 65.13%',
     'Museo - 34.72% | 65.28%',
+    'Lovers - 32.17% | 67.83%',
     'Stream - 30.98% | 69.02%',
     'Hot - 30.90% | 69.10%',
-    '10% Knife - 10.00% | 90.00%'];
+    '10% Knife - 10.00% | 90.00%'
+    ];
     
     for (const item of arrOfElements) {
         let insideDivCase = document.createElement('div');
