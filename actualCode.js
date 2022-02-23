@@ -11,10 +11,10 @@ function main() {
             if (resultDiv.children[0])
                 resultDiv.children[0].remove();
             const regex = /(\d{1,2}(\.\d{1,})?\%)/gm;
-            let arr = inputElement.value.match(regex);
-            arr = arr.map(x => x.replace('%', ''));
-            var result = arr.reduce((prev, current) => Number(prev) + Number(current), initial = 0)
-
+            try{
+                let arr = inputElement.value.match(regex);
+                arr = arr.map(x => x.replace('%', ''));
+                var result = arr.reduce((prev, current) => Number(prev) + Number(current), initial = 0)
             let h2El = document.createElement('h2');
             h2El.setAttribute("class", 'result-text')
             h2El.textContent = `${result.toFixed(fixedNums)}% | ${(100-result).toFixed(fixedNums)}%`;
@@ -22,6 +22,10 @@ function main() {
             if (resultDiv.children[1] == h2El) {
                 resultDiv.removeChild(h2El);
             }
+        }
+        catch {
+            alert("Enter a number with the symbol \"%\" after it!");
+        }
             inputElement.value = '';
         }
     })
