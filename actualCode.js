@@ -24,7 +24,7 @@ function main() {
             }
         }
         catch {
-            alert("Enter a number with the symbol \"%\" after it!");
+            alert("Enter a number with the symbol \"%\" after it!\n\nWhat am I supposed to calculate, dummy?");
         }
             inputElement.value = '';
         }
